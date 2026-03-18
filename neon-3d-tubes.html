@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+
+<title>
+    
+        
+        Neon 3D Tubes Cursor Trail | JavaScript
+    
+
+    
+    
+</title>
+
+
+
+
+
+    
+    
+        
+        
+    
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Create a mesmerizing 3D trail with this Three.js cursor effect. Features glowing neon tubes, dynamic lighting, and instant color randomization.">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@FreeFrontend">
+<meta property="twitter:domain" content="freefrontend.com">
+<meta property="og:url" content="https://freefrontend.com/code/neon-3d-tubes-cursor-trail-2026-02-05/">
+<meta property="twitter:url" content="https://freefrontend.com/code/neon-3d-tubes-cursor-trail-2026-02-05/">
+<meta property="og:updated_time" content="2026-02-05T00:00:00Z" />
+<meta property="og:type" content="article">
+
+
+    
+    <meta property="og:title" content="Neon 3D Tubes Cursor Trail">
+    <meta name="twitter:title" content="Neon 3D Tubes Cursor Trail">
+    
+    <meta property="og:description" content="Create a mesmerizing 3D trail with this Three.js cursor effect. Features glowing neon tubes, dynamic lighting, and instant color randomization."> 
+    <meta name="twitter:description" content="Create a mesmerizing 3D trail with this Three.js cursor effect. Features glowing neon tubes, dynamic lighting, and instant color randomization.">
+    
+    
+    
+        <meta property="og:image" content="https://freefrontend.com/img/2026/2026-02-05-neon-3d-tubes-cursor-trail_hu13809915706196854970.webp" data-pagefind-meta="image[content]">
+        <meta name="twitter:image" content="https://freefrontend.com/img/2026/2026-02-05-neon-3d-tubes-cursor-trail_hu13809915706196854970.webp">
+    
+
+
+
+
+<link rel="icon" href="https://freefrontend.com/favicon.ico">
+<link rel="alternate" type="application/rss+xml" href="https://freefrontend.com//sitemap.xml" title="FreeFrontend">
+
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="/css/main.min.fb1dcb8ff30421aa11c2b32fee95bb10829e067e473a892235f1b1735315ade4.css" integrity="sha256-&#43;x3Lj/MEIaoRwrMv7pW7EIKeBn5HOokiNfGxc1MVreQ=" crossorigin="anonymous">
+
+
+
+
+
+
+<link rel="canonical" href="https://freefrontend.com/code/neon-3d-tubes-cursor-trail-2026-02-05/">
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7958472158675518" crossorigin="anonymous"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDG25XV6ED"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WDG25XV6ED');
+</script>
+
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ 
+          element: "#search",
+          showSubResults: false,
+          pageSize: 10,
+          showImages: true });
+    });
+</script>
+
+
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="Th9ztPLDOFodUfgMRnFFag" async></script>
+
+  
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" itemscope itemtype="https://schema.org/WPSideBar">
+        <div class="wrapper">
+  <div class="logo-container"><a href="https://freefrontend.com/" class="logo" aria-label="FreeFrontend"><span>FreeFrontend<span>.</span></span></a>
+  </div>
+  <nav class="sidebar-nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    
+    <div class="nav-group">
+      <h3 class="nav-title">Languages</h3>
+      <ul class="nav-list">
+        <li>
+
+          <a href="/html-code-examples/" class="nav-link" itemprop="url">
+
+            <span itemprop="name">HTML</span>
+            <span class="badge">36</span>
+          </a>
+        </li>
+        <li>
+          <a href="/css-code-examples/" class="nav-link" itemprop="url">
+            <span itemprop="name">CSS</span>
+            <span class="badge">282</span>
+          </a>
+        </li>
+        <li>
+          <a href="/javascript-code-examples/" class="nav-link" itemprop="url">
+            <span itemprop="name">JavaScript</span>
+            <span class="badge">218</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-group">
+      <h3 class="nav-title">Frameworks</h3>
+      <ul class="nav-list">
+        <li>
+          <a href="/bootstrap-code-examples/" class="nav-link" itemprop="url">
+            <span itemprop="name">Bootstrap</span>
+            <span class="badge">65</span>
+          </a>
+        </li>
+        <li>
+          <a href="/tailwind-code-examples/" class="nav-link" itemprop="url">
+            <span itemprop="name">Tailwind CSS</span>
+            <span class="badge">78</span>
+          </a>
+        </li>
+      </ul> 
+    </div>
+
+  </nav>
+
+
+  <div class="sidebar-footer">
+    <h3 class="nav-title">Community</h3>
+    <div class="social-links">
+      
+      
+      
+      <a href="https://t.me/fr0ntend_news" class="social-btn" aria-label="Telegram" target="_blank" rel="noopener me">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.48-.94-2.4-1.54-1.06-.7-.37-1.09.23-1.7l1.54-1.42c.07-.06.13-.18.03-.27-.1-.09-.3-.06-.44-.03L8.85 13.2c-.66.2-1.28.2-1.88.03-.68-.18-1.46-.38-1.46-.38s1.08-.82 2.62-1.44c6.33-2.58 8.16-3.1 8.51-3.1.33 0 .49.08.49.08z"/>
+        </svg>
+      </a>
+
+      
+      <a href="https://x.com/FreeFrontend" class="social-btn" aria-label="Twitter" target="_blank" rel="noopener me">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+
+      
+      <a href="https://www.facebook.com/freefrontend/" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener me">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
+        </svg>
+      </a>
+
+      
+      <a href="https://www.linkedin.com/groups/13807698/" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener me">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+        </svg>
+      </a>
+
+      
+      <a href="https://www.pinterest.com/freefrontend/" class="social-btn" aria-label="Pinterest" target="_blank" rel="noopener me">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2 10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.18-2.07 0-3.04l.58-2.3c-.22-.61-.22-1.55.45-2.22.61-.62 1.77-.25 1.57 1.05-.18 1.1-.96 2.05-.03 2.95 1.06 1.02 3.19.08 3.52-2.58.26-2.14-1.5-3.8-3.7-3.8-3.03 0-4.32 2.15-3.9 4.1.2.9.89.85.89.85-.3.94-1.37.56-1.67-.18-.58-1.43.08-3.99 2.5-5.18 3.65-1.8 7.37.86 6.35 4.97-.73 2.95-2.56 2.92-3.32 1.92-.38-.48-.28-1.3-.28-1.3l-.68 2.6c-.34 1.25-.56 2.19-.24 3.32z"/>
+        </svg>
+      </a>
+
+      
+      <a href="https://freefrontend-blog.tumblr.com" class="social-btn" aria-label="Tumblr" target="_blank" rel="noopener me">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M14.5 2h-2.5C11 2 11 3 11 4v3.3h-2.3v2.8h2.3v5.6c0 1.9 1 3.3 3.4 3.3H17v-3h-1.6c-.7 0-.9-.3-.9-.9V10h2.5V7.2h-2.5V4c0-.7 0-2 0-2z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</div>
+    </aside>
+    <main class="content">
+      
+<div id="search"></div>
+
+
+<article class="container-single" itemscope itemtype="https://schema.org/SoftwareSourceCode" data-pagefind-body>
+
+<div class="ad-container" style="margin-bottom: 30px;">
+<div class="block">
+      <span class="ad-label">Advertisement</span>
+      <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7958472158675518"
+             data-ad-slot="1316597813"
+     data-ad-format="auto" 
+     data-full-width-responsive="true"></ins>
+<script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+  
+  
+  <meta itemprop="license" content="https://opensource.org/licenses/MIT">
+  <meta itemprop="codeSampleType" content="snippet">
+  <meta itemprop="runtimePlatform" content="Browser">
+
+  
+  <nav class="single-breadcrumbs" data-pagefind-ignore>
+    
+      
+        
+        
+        <a href="https://freefrontend.com/three-js" class="crumb-tag" itemprop="keywords">
+          #three js
+        </a>
+      
+        <span class="sep">/</span>
+        
+        <a href="https://freefrontend.com/webgl" class="crumb-tag" itemprop="keywords">
+          #webgl
+        </a>
+      
+        <span class="sep">/</span>
+        
+        <a href="https://freefrontend.com/javascript-neon" class="crumb-tag" itemprop="keywords">
+          #js neon
+        </a>
+      
+        <span class="sep">/</span>
+        
+        <a href="https://freefrontend.com/javascript-background-effects" class="crumb-tag" itemprop="keywords">
+          #js background effects
+        </a>
+      
+        <span class="sep">/</span>
+        
+        <a href="https://freefrontend.com/javascript-mouse-tracking" class="crumb-tag" itemprop="keywords">
+          #js mouse tracking
+        </a>
+      
+        <span class="sep">/</span>
+        
+        <a href="https://freefrontend.com/javascript-3d-effects" class="crumb-tag" itemprop="keywords">
+          #js 3d effects
+        </a>
+      
+        <span class="sep">/</span>
+        
+        <a href="https://freefrontend.com/html-canvas-api" class="crumb-tag" itemprop="keywords">
+          #html canvas api
+        </a>
+      
+    
+  </nav>
+
+  
+  <header class="single-header">
+    <h1 class="single-title" itemprop="name" data-pagefind-weight="1">Neon 3D Tubes Cursor Trail</h1>
+    
+    <div class="single-meta-row" data-pagefind-ignore>
+      
+      <div class="meta-left">
+        <span class="meta-item">
+            <time datetime="2026-02-05" itemprop="datePublished">Feb 05, 2026</time>
+            <meta itemprop="dateModified" content="2026-02-05">
+        </span>
+        <span class="meta-sep">|</span>
+        <span class="meta-item" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span>by</span> <a href="/about-me/" itemprop="url"><span itemprop="name">Vladimir</span>
+          </a>
+        </span>
+        <span class="meta-sep">|</span>
+        <span class="meta-item ">2 min read</span>
+        <span class="meta-sep">|</span>
+        <span class="meta-item">code by Kevin Levron</span>
+      </div>
+
+      
+      <div class="meta-right">
+        
+
+        
+          <span class="badge-difficulty beginner">
+            Beginner
+          </span>
+        
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="single-demo-area" data-pagefind-ignore>
+    
+      
+      <link itemprop="codeRepository" href="https://codepen.io/pen/qEbdVjK">
+      
+      <div class="codepen-wrapper">
+        <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-slug-hash="qEbdVjK" data-editable="true" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/anon/pen/qEbdVjK"> Neon 3D Tubes Cursor Trail</a>.</span>
+        </p>
+      </div>
+    
+    
+    
+       
+<div class="demo-actions">
+  
+  
+    <a href="https://codepen.io/soju22/pen/qEbdVjK" target="_blank" rel="noopener" class="btn-source" itemprop="SameAs">
+      <span>View Source</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-view">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+      </svg>
+    </a>
+  
+
+  
+    
+    <a href="/zip/2026-02-05-neon-3d-tubes-cursor-trail.zip" class="btn-source btn-download" itemprop="downloadUrl" download>
+      <span>Download Source</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-dl">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </a>
+  
+</div>
+
+  
+  </section>
+
+  
+  
+<section class="specs-dashboard">
+  
+  
+  <div class="spec-card" data-pagefind-ignore>
+    <h3>Tech & Dependencies</h3>
+    <div class="spec-tags">
+      
+      
+        <span class="tech-tag tech-html" itemprop="programmingLanguage">HTML</span>
+      
+        <span class="tech-tag tech-css" itemprop="programmingLanguage">CSS</span>
+      
+        <span class="tech-tag tech-javascript" itemprop="programmingLanguage">JavaScript</span>
+      
+
+      
+      
+      <div class="spec-divider"></div>
+        
+          <span class="tech-tag tech-dep" itemprop="softwareRequirements">threejs-components (External Lib)</span>
+        
+      
+    </div>
+  </div>
+
+  
+  
+  <div class="spec-card">
+    <h3>Features</h3>
+    <ul class="feature-list">
+      
+        <li itemprop="keywords" data-pagefind-weight="3"><span class="check">✓</span> 3D Trail</li>
+      
+        <li itemprop="keywords" data-pagefind-weight="3"><span class="check">✓</span> Dynamic Lighting</li>
+      
+        <li itemprop="keywords" data-pagefind-weight="3"><span class="check">✓</span> Procedural Color</li>
+      
+        <li itemprop="keywords" data-pagefind-weight="3"><span class="check">✓</span> High Performance</li>
+      
+    </ul>
+  </div>
+  
+
+  
+  <div class="spec-card" data-pagefind-ignore>
+    <h3>Browser Support</h3>
+    <div class="browser-list">
+      
+        
+        
+          
+          
+            <span class="browser-item" itemprop="runtimePlatform">Chrome 80&#43;</span>
+          
+        
+          
+          
+            <span class="browser-item" itemprop="runtimePlatform">Edge 80&#43;</span>
+          
+        
+          
+          
+            <span class="browser-item" itemprop="runtimePlatform">Firefox 75&#43;</span>
+          
+        
+          
+          
+            <span class="browser-item" itemprop="runtimePlatform">Safari 13.1&#43;</span>
+          
+        
+      
+    </div>
+  </div>
+
+</section>
+
+  
+  <div class="single-content" itemprop="description">
+    <h2>Core</h2>
+    <div class="markdown-body" itemprop="articleBody" data-pagefind-weight="2">
+         
+  <p>This <strong>Neon 3D Tubes Cursor Trail</strong> brings high-end motion graphics to the web browser. Using the power of WebGL and Three.js, it generates a serpentine trail of glowing 3D geometry that fluidly follows the user&rsquo;s input. The effect features dynamic lighting that casts soft glows on the tubes, and it includes a built-in interaction where clicking the screen instantly randomizes the color palette, keeping the visual experience fresh.</p>
+
+  
+  
+
+    
+    
+    
+<h3 id="core-technique">Core Technique</h3>
+<p>The complexity of setting up a 3D scene, camera, and render loop is abstracted away by the <code>threejs-components</code> library. The core logic relies on the <code>TubesCursor</code> class.</p>
+<ol>
+<li><strong>Initialization:</strong> The script targets a standard HTML <code>&lt;canvas&gt;</code> element and initializes the WebGL context.</li>
+<li><strong>Tube Generation:</strong> As the mouse moves, the library calculates the trajectory and generates a tube geometry along that path. It essentially &ldquo;extrudes&rdquo; a shape along a spline defined by the cursor&rsquo;s history.</li>
+<li><strong>Lighting System:</strong> The config object defines specific point lights (<code>intensity</code> and <code>colors</code>). These lights interact with the material of the tubes to create the 3D volume and neon glow effect.</li>
+<li><strong>Color Randomization:</strong> A custom helper function <code>randomColors(count)</code> generates hex codes on the fly. When a click event is detected, the app methods <code>setColors</code> and <code>setLightsColors</code> are called to update the shader uniforms instantly without re-initializing the whole scene.</li>
+</ol>
+<h3 id="customization">Customization</h3>
+<p>You can control the visual aesthetics by passing a configuration object to the <code>TubesCursor</code> constructor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#cdd6f4;background-color:#1e1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#cba6f7">const</span> app <span style="color:#89dceb;font-weight:bold">=</span> TubesCursor(<span style="color:#89dceb">document</span>.getElementById(<span style="color:#a6e3a1">&#39;canvas&#39;</span>), {
+</span></span><span style="display:flex;"><span>  tubes<span style="color:#89dceb;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#6c7086;font-style:italic">// Array of base colors for the tube material
+</span></span></span><span style="display:flex;"><span><span style="color:#6c7086;font-style:italic"></span>    colors<span style="color:#89dceb;font-weight:bold">:</span> [<span style="color:#a6e3a1">&#34;#f967fb&#34;</span>, <span style="color:#a6e3a1">&#34;#53bc28&#34;</span>, <span style="color:#a6e3a1">&#34;#6958d5&#34;</span>], 
+</span></span><span style="display:flex;"><span>    lights<span style="color:#89dceb;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#6c7086;font-style:italic">// Brightness of the glow (higher = more bloom)
+</span></span></span><span style="display:flex;"><span><span style="color:#6c7086;font-style:italic"></span>      intensity<span style="color:#89dceb;font-weight:bold">:</span> <span style="color:#fab387">200</span>, 
+</span></span><span style="display:flex;"><span>      <span style="color:#6c7086;font-style:italic">// Colors of the light sources casting onto the tubes
+</span></span></span><span style="display:flex;"><span><span style="color:#6c7086;font-style:italic"></span>      colors<span style="color:#89dceb;font-weight:bold">:</span> [<span style="color:#a6e3a1">&#34;#83f36e&#34;</span>, <span style="color:#a6e3a1">&#34;#fe8a2e&#34;</span>, <span style="color:#a6e3a1">&#34;#ff008a&#34;</span>, <span style="color:#a6e3a1">&#34;#60aed5&#34;</span>]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>To integrate the randomization into your own UI, you can trigger the update function from any button:</p>
+<div class="highlight"><pre tabindex="0" style="color:#cdd6f4;background-color:#1e1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>myButton.addEventListener(<span style="color:#a6e3a1">&#39;click&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#6c7086;font-style:italic">// Generate 3 random colors for tubes
+</span></span></span><span style="display:flex;"><span><span style="color:#6c7086;font-style:italic"></span>  app.tubes.setColors(randomColors(<span style="color:#fab387">3</span>));
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h3 id="tips">Tips</h3>
+<p><strong>1. Managing Mobile Interaction:</strong>
+The CSS includes <code>touch-action: none;</code> on the body. This is critical for full-screen interactive canvases on mobile devices. Without it, dragging your finger to create a trail would simultaneously scroll the webpage, ruining the experience.</p>
+<p><strong>2. Z-Index Layering:</strong>
+Since the canvas is positioned with <code>fixed</code> and covers the viewport, ensure your content (headlines, buttons) has a higher <code>z-index</code> and <code>position: relative</code> (or absolute). Additionally, <code>user-select: none</code> on the text prevents accidental highlighting while users play with the cursor.</p>
+  
+    </div>
+  </div>
+
+      <div class="single-meta-row" data-pagefind-ignore>
+        <div class="share-buttons">
+                <span>Share:</span>
+                <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2ffreefrontend.com%2fcode%2fneon-3d-tubes-cursor-trail-2026-02-05%2f&text=Neon%203D%20Tubes%20Cursor%20Trail" target="_blank" rel="noopener noreferrer" aria-label="Share on X">X</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2ffreefrontend.com%2fcode%2fneon-3d-tubes-cursor-trail-2026-02-05%2f" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">LinkedIn</a>
+                <a href="https://www.reddit.com/submit?url=https%3a%2f%2ffreefrontend.com%2fcode%2fneon-3d-tubes-cursor-trail-2026-02-05%2f&title=Neon%203D%20Tubes%20Cursor%20Trail" target="_blank" rel="noopener noreferrer" aria-label="Share on Reddit">Reddit</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ffreefrontend.com%2fcode%2fneon-3d-tubes-cursor-trail-2026-02-05%2f" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">Facebook</a>
+                <a href="https://t.me/share/url?url=https%3a%2f%2ffreefrontend.com%2fcode%2fneon-3d-tubes-cursor-trail-2026-02-05%2f&text=Neon%203D%20Tubes%20Cursor%20Trail" target="_blank" rel="noopener noreferrer" aria-label="Share on Telegram">Telegram</a>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+<section class="related-posts" data-pagefind-ignore>
+  <h3 class="related-title">// You might also like</h3>
+  <div class="related-grid">
+    
+    <a href="https://freefrontend.com/code/interactive-3d-pricing-card-slider-2026-02-28/" class="related-card">
+      
+        <div class="related-img">
+                
+                
+                    
+                    <img src="/img/2026/2026-02-28-interactive-3d-pricing-card-slider_hu6347195788930334952.webp" 
+                         alt="Three colorful pricing cards with interactive 3D geometric shapes rotating on hover, presented in a swipeable carousel"
+                         loading="lazy" itemprop="image" 
+                         width="1280" height="720">
+                
+        </div>
+      
+      <div class="related-info">
+        <h4>Interactive 3D Pricing Card Slider</h4>
+        
+          <span class="related-tag">JavaScript</span>
+        
+      </div>
+    </a>
+    
+    <a href="https://freefrontend.com/code/matcap-instanced-disco-geometry-2026-03-11/" class="related-card">
+      
+        <div class="related-img">
+                
+                
+                    
+                    <img src="/img/2026/2026-03-11-matcap-instanced-disco-geometry_hu3413608303956930323.webp" 
+                         alt="Three rotating 3D geometric shapes (Torus Knot, Icosahedron, Torus) rendered in a WebGL canvas with high-gloss matcap crystal textures"
+                         loading="lazy" itemprop="image" 
+                         width="1280" height="720">
+                
+        </div>
+      
+      <div class="related-info">
+        <h4>Matcap Instanced Disco Geometry</h4>
+        
+          <span class="related-tag">JavaScript</span>
+        
+      </div>
+    </a>
+    
+    <a href="https://freefrontend.com/code/shattering-image-gallery-transition-2026-03-05/" class="related-card">
+      
+        <div class="related-img">
+                
+                
+                    
+                    <img src="/img/2026/2026-03-05-shattering-image-gallery-transition_hu10844445623221807643.webp" 
+                         alt="A photograph shattering into hundreds of square fragments that fly toward the camera, revealing another image beneath"
+                         loading="lazy" itemprop="image" 
+                         width="1280" height="720">
+                
+        </div>
+      
+      <div class="related-info">
+        <h4>Shattering Image Gallery Transition</h4>
+        
+          <span class="related-tag">JavaScript</span>
+        
+      </div>
+    </a>
+    
+  </div>
+</section>
+
+
+<div class="ad-container">
+<div class="block">
+      <span class="ad-label">Advertisement</span>
+      <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7958472158675518"
+             data-ad-slot="1316597813"
+     data-ad-format="auto" 
+     data-full-width-responsive="true"></ins>
+<script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+</article>
+
+
+          <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+  
+  <div class="footer-links">
+    
+    
+    <small class="copyright">
+      
+      <span itemprop="copyrightYear">2016 - 2026</span> 
+      &copy; 
+      <span itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">FreeFrontend</span>
+      </span>
+    </small>
+
+    
+    <span class="separator" aria-hidden="true">&#x2218;</span>
+
+    
+    <a href="/about-me" rel="nofollow">About Me</a>
+
+    <span class="separator" aria-hidden="true">&#x2218;</span>
+
+    <a href="/privacy-policy" rel="nofollow">Privacy Policy</a>
+
+    <span class="separator" aria-hidden="true">&#x2218;</span>
+
+    <a href="/cookies-policy" rel="nofollow">Cookies Policy</a>
+
+  </div>
+
+</footer>
+    </main>
+  </div>
+<button id="back-to-top" aria-label="Back to Top">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+      <script src="/js/main.e75b6ec7198068610c781e930ac40c39ed8cf756bd9434d5e152ce2592f7ba4c.js" integrity="sha256-51tuxxmAaGEMeB6TCsQMOe2M91a9lDTV4VLOJZL3ukw=" crossorigin="anonymous"></script>
+
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+    
+
+<dialog id="page-modal" class="page-modal">
+  <div class="modal-wrapper">
+    <button id="modal-close-btn" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div id="modal-content" class="modal-content-area">
+      
+    </div>
+  </div>
+</dialog>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9de438046a348be4',t:'MTc3MzgzNjcxMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
