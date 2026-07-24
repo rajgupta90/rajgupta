@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-  base: "/rajgupta/",
+  base: "/", // Custom domains use the root path
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
